@@ -1,0 +1,53 @@
+## v0.8 - extras
+
+- TODO (optional):
+	+ add offline render with service worker
+	+ add jest testing for redux action / reducers
+	+ add about page route / container
+	+ add wiki documentation
+
+## v0.7 - cleanup
+
+- TODO:
+	+ clean up styles globally
+	+ improve semantic structure
+
+## v0.6 - single hero
+
+- TODO:
+	+ set up container for single hero
+	+ set up routing for single hero
+	+ style single hero component
+
+## v0.5 - data rendering
+
+- TODO:
+	+ render data via redux store props
+	+ style hero cards on search page
+
+
+## v0.4 - api connect
+
+- TODO:
+	+ redux hookup
+	+ create async request to Marvel API
+
+## v0.3 - styles
+
+- TODO:
+	+ add base structure styles
+	+ add material-ui components 
+
+## v0.2 - add chore / devops helpers
+
+- TODO:
+	+ unpack create-react-app
+	+ add SCSS compiling with webpack
+	+ add base component testing with jest
+
+## v0.1 - base structure
+
+- TODO:
+	+ Create base application with create-react-app
+	+ Create base components
+	+ Create base documentation
