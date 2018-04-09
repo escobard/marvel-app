@@ -49,5 +49,7 @@
 
 - TODO:
 	+ Create base application with create-react-app
+	+ Create base repo
+	+ Create npm init
 	+ Create base components
 	+ Create base documentation
