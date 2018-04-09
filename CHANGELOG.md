@@ -47,7 +47,7 @@
 
 ## v0.1 - base structure
 
-- TODO:
+- COMPLETED:
 	+ Create base application with create-react-app
 	+ Create base repo
 	+ Create npm init
