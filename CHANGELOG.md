@@ -25,7 +25,6 @@
 	+ render data via redux store props
 	+ style hero cards on search page
 
-
 ## v0.4 - api connect
 
 - TODO:
@@ -36,7 +35,9 @@
 
 - TODO:
 	+ add base structure styles
-	+ add material-ui components 
+	+ add material-ui components for main page including:
+		* search input
+		* search button
 
 ## v0.2 - add chore / devops helpers
 
