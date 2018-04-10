@@ -25,7 +25,7 @@
 	+ render data via redux store props
 	+ style hero cards on search page
 
-## v0.4 - api connect
+## v0.4 - semantics and styles
 
 - TODO:
 	+ add base structure styles
@@ -33,9 +33,9 @@
 		* search input
 		* search button
 
-## v0.3 - semantics and styles
+## v0.3 - api connect
 
-- TODO:
+- COMPLETED:
 	+ redux hookup
 	+ create async request to Marvel API
 
