@@ -40,7 +40,7 @@
 
 ## v0.2 - add chore / devops helpers
 
-- TODO:
+- COMPLETED:
 	+ eject create-react-app
 	+ add SCSS compiling with webpack
 	+ add base component testing with jest

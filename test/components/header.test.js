@@ -4,7 +4,6 @@ import Header from "../../src/components/Header";
 import toJson from "enzyme-to-json";
 import configureStore from "redux-mock-store";
 
-// this is the proper way to render the connected components with jest!
 describe("Header snapshot", () => {
     const initialState = { output: 100 };
     const mockStore = configureStore();

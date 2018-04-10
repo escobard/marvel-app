@@ -6,39 +6,17 @@ exports[`Header snapshot +++ render the Header component 1`] = `
 >
   <AppBar
     className="appbar"
-    iconElementRight={
-      <a
-        href="auth/google"
-      >
-        <FlatButton
-          className="login"
-          disabled={false}
-          fullWidth={false}
-          label="Log in"
-          labelPosition="after"
-          labelStyle={Object {}}
-          onKeyboardFocus={[Function]}
-          onMouseEnter={[Function]}
-          onMouseLeave={[Function]}
-          onTouchStart={[Function]}
-          primary={false}
-          secondary={false}
-        />
-      </a>
-    }
     onLeftIconButtonClick={[Function]}
-    onRightIconButtonClick={[Function]}
     showMenuIconButton={true}
     title={
       <Link
+        className="navbar-title"
         replace={false}
         to="/"
       >
-        <img
-          alt="EngBook Logo"
-          className="logo"
-          src="logo.jpg"
-        />
+        <h1>
+          HeroIndex
+        </h1>
       </Link>
     }
     zDepth={1}
@@ -48,7 +26,7 @@ exports[`Header snapshot +++ render the Header component 1`] = `
     disableSwipeToOpen={false}
     docked={false}
     onRequestChange={[Function]}
-    open={false}
+    open={null}
     openSecondary={false}
     swipeAreaWidth={30}
     width={null}
@@ -91,7 +69,7 @@ exports[`Header snapshot +++ render the Header component 1`] = `
       className="links"
       key="1"
       replace={false}
-      to="/dashboard"
+      to="/about"
     >
       <MenuItem
         anchorOrigin={
@@ -112,35 +90,7 @@ exports[`Header snapshot +++ render the Header component 1`] = `
           }
         }
       >
-        dashboard
-      </MenuItem>
-    </Link>
-    <Link
-      className="links"
-      key="2"
-      replace={false}
-      to="/addquestion"
-    >
-      <MenuItem
-        anchorOrigin={
-          Object {
-            "horizontal": "right",
-            "vertical": "top",
-          }
-        }
-        checked={false}
-        desktop={false}
-        disabled={false}
-        focusState="none"
-        insetChildren={false}
-        targetOrigin={
-          Object {
-            "horizontal": "left",
-            "vertical": "top",
-          }
-        }
-      >
-        addquestion
+        about
       </MenuItem>
     </Link>
   </Drawer>
