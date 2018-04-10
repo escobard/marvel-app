@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import './App.css';
-
 import { connect } from "react-redux";
 import { Route } from "react-router-dom";
 import { withRouter } from "react-router-dom";
+
+import {fetchComics} from "./actions"
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
@@ -12,7 +12,9 @@ import Home from "./containers/home";
 
 class App extends Component {
    componentDidMount() {
-      // will fetch initial data
+    // will fetch initial data
+    // http://gateway.marvel.com/v1/public/comics?apikey=c88aa66a7664cb7a2d8ec8f416c3922e
+    this.props.fetchComics()
   }
   render() {
     return (
@@ -27,4 +29,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default connect(null, {fetchComics})(App);

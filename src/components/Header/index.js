@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { FlatButton, AppBar, Drawer, RaisedButton } from "material-ui";
 import DashIcon from "material-ui/svg-icons/action/dashboard";
 
+import styles from "./styles.scss"
 import NavItems from "./NavItems";
 
 // usually all redux state would be handled within a container, but since
