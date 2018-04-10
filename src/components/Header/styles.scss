@@ -6,9 +6,12 @@ nav.navbar {
 	margin-bottom: $space-xlrg;
 	.appbar {
 		background-color: $primary !important;
-		}
+	}
 	h1 {
 		text-align: center;
+		text-decoration: none;
+		color: $white;
+		margin-top: $space-small;
 	}
 	.drawer {
 		div {
