@@ -32,7 +32,7 @@
 	+ redux hookup
 	+ create async request to Marvel API
 
-## v0.3 - styles
+## v0.3 - semantics and styles
 
 - TODO:
 	+ add base structure styles

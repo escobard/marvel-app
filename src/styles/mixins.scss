@@ -1,0 +1,11 @@
+@import "variables";
+
+// sample mixins - remove the outline-button mixin later, use as sample
+
+@mixin nav-links(){
+    div {
+      &:nth-child(2) {
+        margin-top: 0;
+      }
+    }
+}
