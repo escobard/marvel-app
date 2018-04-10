@@ -28,16 +28,16 @@
 ## v0.4 - api connect
 
 - TODO:
-	+ redux hookup
-	+ create async request to Marvel API
-
-## v0.3 - semantics and styles
-
-- TODO:
 	+ add base structure styles
 	+ add material-ui components for main page including:
 		* search input
 		* search button
+
+## v0.3 - semantics and styles
+
+- TODO:
+	+ redux hookup
+	+ create async request to Marvel API
 
 ## v0.2 - add chore / devops helpers
 
