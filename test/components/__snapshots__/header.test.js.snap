@@ -1,0 +1,98 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header snapshot +++ render the Header component 1`] = `
+<nav
+  className="navbar navbar-light"
+>
+  <AppBar
+    className="appbar"
+    onLeftIconButtonClick={[Function]}
+    showMenuIconButton={true}
+    title={
+      <Link
+        className="navbar-title"
+        replace={false}
+        to="/"
+      >
+        <h1>
+          HeroIndex
+        </h1>
+      </Link>
+    }
+    zDepth={1}
+  />
+  <Drawer
+    className="drawer"
+    disableSwipeToOpen={false}
+    docked={false}
+    onRequestChange={[Function]}
+    open={null}
+    openSecondary={false}
+    swipeAreaWidth={30}
+    width={null}
+    zDepth={2}
+  >
+    <div
+      className="navbar-top"
+    >
+      <ActionDashboard />
+    </div>
+    <Link
+      className="links"
+      key="0"
+      replace={false}
+      to="/"
+    >
+      <MenuItem
+        anchorOrigin={
+          Object {
+            "horizontal": "right",
+            "vertical": "top",
+          }
+        }
+        checked={false}
+        desktop={false}
+        disabled={false}
+        focusState="none"
+        insetChildren={false}
+        targetOrigin={
+          Object {
+            "horizontal": "left",
+            "vertical": "top",
+          }
+        }
+      >
+        home
+      </MenuItem>
+    </Link>
+    <Link
+      className="links"
+      key="1"
+      replace={false}
+      to="/about"
+    >
+      <MenuItem
+        anchorOrigin={
+          Object {
+            "horizontal": "right",
+            "vertical": "top",
+          }
+        }
+        checked={false}
+        desktop={false}
+        disabled={false}
+        focusState="none"
+        insetChildren={false}
+        targetOrigin={
+          Object {
+            "horizontal": "left",
+            "vertical": "top",
+          }
+        }
+      >
+        about
+      </MenuItem>
+    </Link>
+  </Drawer>
+</nav>
+`;
