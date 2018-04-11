@@ -12,20 +12,20 @@
 	+ clean up styles globally
 	+ improve semantic structure
 
-## v0.6 - single hero
-
-- TODO:
-	+ set up container for single hero
-	+ set up routing for single hero
-	+ style single hero component
-
-## v0.5 - semantics and styles
+## v0.6 - semantics and styles
 
 - TODO:
 	+ add base structure styles
 	+ add material-ui components for main page including:
 		* search input
 		* search button
+
+## v0.5 - single hero
+
+- TODO:
+	+ set up container for single hero
+	+ set up routing for single hero
+	+ style single hero component
 
 ## v0.4 - data rendering
 
