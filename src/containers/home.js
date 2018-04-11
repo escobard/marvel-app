@@ -3,13 +3,21 @@ import { connect } from "react-redux";
 
 import HeroList from "../components/HeroList"
 
-export default class Home extends Component {
+class Home extends Component {
   render() {
     return (
       <div>
         <h2>Enter the name of your favorite infinity war hero!</h2>
-        <HeroList />
+        <HeroList heroes={ this.props.marvel }/>
       </div>
     );
   }
 }
+
+function mapStateToProps({marvel}){
+	return{
+		marvel
+	}
+}
+
+export default connect(mapStateToProps)(Home)
