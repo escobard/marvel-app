@@ -3,13 +3,17 @@ import PropTypes from 'prop-types';
 
 import styles from "./styles.scss"
 
+import Hero from "./Hero"
+
 export default class HeroList extends Component{
 
-	renderHeroes = (heroes) =>{
+	renderHeroes = (heroes) => {
 		return heroes.map(( hero, index ) =>{
 			let {name} = hero;
 			return(
-					<p key={index}>{name}</p>
+				<div key={index}>
+					<Hero hero={hero}/>
+				</div>
 				)
 		})
 	}
