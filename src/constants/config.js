@@ -1,5 +1,5 @@
 // this file would usually be within .gitignore to avoid API highjacking, but I will forego this security
-// practice to allow Alix to more easily test my project :)
+// practice to allow easier testing of my project
 
 const config = {
 	marvelPublic: 'c88aa66a7664cb7a2d8ec8f416c3922e',
