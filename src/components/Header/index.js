@@ -30,7 +30,7 @@ class Header extends Component {
 					className="appbar"
 					title={
 						<Link to="/" className="navbar-title">
-							<h1>HeroIndex</h1>
+							<h1>InfinityIndex</h1>
 						</Link>
 					}
 					onLeftIconButtonClick={this.handleToggle}

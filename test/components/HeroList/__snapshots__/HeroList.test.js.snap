@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`HeroList snapshot +++ render the HeroList component 1`] = `
+<div
+  className="hero-list"
+>
+  <p>
+    Hero list
+  </p>
+  <p>
+    Loading...
+  </p>
+</div>
+`;

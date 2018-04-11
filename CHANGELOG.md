@@ -19,13 +19,7 @@
 	+ set up routing for single hero
 	+ style single hero component
 
-## v0.5 - data rendering
-
-- TODO:
-	+ render data via redux store props
-	+ style hero cards on search page
-
-## v0.4 - api connect
+## v0.5 - semantics and styles
 
 - TODO:
 	+ add base structure styles
@@ -33,9 +27,15 @@
 		* search input
 		* search button
 
-## v0.3 - semantics and styles
+## v0.4 - data rendering
 
-- TODO:
+- COMPLETED:
+	+ render data via redux store props
+	+ style hero cards on search page
+
+## v0.3 - api connect
+
+- COMPLETED:
 	+ redux hookup
 	+ create async request to Marvel API
 

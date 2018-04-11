@@ -15,7 +15,7 @@ exports[`Header snapshot +++ render the Header component 1`] = `
         to="/"
       >
         <h1>
-          HeroIndex
+          InfinityIndex
         </h1>
       </Link>
     }

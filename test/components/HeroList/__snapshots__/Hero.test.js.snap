@@ -1,0 +1,30 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero snapshot +++ render the Hero component 1`] = `
+<Card
+  className="hero-card"
+  expandable={false}
+  expanded={false}
+  initiallyExpanded={false}
+>
+  <CardHeader
+    avatar="images/ok-128.jpg"
+    subtitle="Subtitle"
+  />
+  <CardActions>
+    <FlatButton
+      disabled={false}
+      fullWidth={false}
+      label="Click to expand"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      primary={false}
+      secondary={false}
+    />
+  </CardActions>
+</Card>
+`;
