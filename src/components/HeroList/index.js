@@ -1,8 +1,10 @@
 import React, { Component } from "react"
+import PropTypes from 'prop-types';
 
 import styles from "./styles.scss"
 
-export default class extends Component{
+export default class HeroList extends Component{
+
 	renderHeroes = (heroes) =>{
 		return heroes.map(( hero, index ) =>{
 			let {name} = hero;
@@ -11,6 +13,7 @@ export default class extends Component{
 				)
 		})
 	}
+
 	render(){
 		let { heroes } = this.props
 		console.log('heroes', this.props.heroes)
@@ -26,3 +29,11 @@ export default class extends Component{
 			)
 	}
 }
+
+HeroList.defaultProps = {
+  heroes: []
+};
+
+HeroList.propTypes = {
+  heroes: PropTypes.array
+};
