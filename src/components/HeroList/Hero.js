@@ -29,7 +29,7 @@ export default class Hero extends Component {
           subtitle="Subtitle"
           avatar="images/ok-128.jpg"
         />
-          <Link to={`/hero/${name}`} className="link">
+          <Link to={`/hero/${name}`} className="link" params={this.props}>
             <FlatButton label="Click to expand" />
           </Link>
       </Card>
