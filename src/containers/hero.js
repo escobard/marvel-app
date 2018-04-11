@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { connect } from "react-redux";
 
+import HeroDetail from "../components/HeroDetail"
+
 class Hero extends Component {
   render() {
     let { marvel } = this.props.marvel ? this.props : [{loading: true}]
@@ -20,10 +22,11 @@ class Hero extends Component {
       }
 
     })
-    
+
     return (
       <div>
         <h3>single hero view</h3>
+        <HeroDetail />
       </div>
     );
   }

@@ -9,13 +9,6 @@ import Toggle from "material-ui/Toggle";
 import { Link } from "react-router-dom"
 
 export default class Hero extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      expanded: false
-    };
-  }
-
   render() {
     let { name, description, urls, thumbnail: { path, extension } } = this.props.hero.name
       ? this.props.hero
