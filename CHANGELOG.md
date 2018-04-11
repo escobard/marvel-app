@@ -19,19 +19,19 @@
 	+ set up routing for single hero
 	+ style single hero component
 
-## v0.5 - data rendering
-
-- TODO:
-	+ render data via redux store props
-	+ style hero cards on search page
-
-## v0.4 - semantics and styles
+## v0.5 - semantics and styles
 
 - TODO:
 	+ add base structure styles
 	+ add material-ui components for main page including:
 		* search input
 		* search button
+
+## v0.4 - data rendering
+
+- COMPLETED:
+	+ render data via redux store props
+	+ style hero cards on search page
 
 ## v0.3 - api connect
 

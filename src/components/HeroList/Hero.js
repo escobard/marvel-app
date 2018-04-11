@@ -2,11 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import {
   Card,
-  CardActions,
   CardHeader,
-  CardMedia,
-  CardTitle,
-  CardText
 } from "material-ui/Card";
 import FlatButton from "material-ui/FlatButton";
 import Toggle from "material-ui/Toggle";
@@ -25,8 +21,6 @@ export default class Hero extends Component {
       : { thumbnail: {} };
     return (
       <Card
-        expanded={this.state.expanded}
-        onExpandChange={this.handleExpandChange}
         className="hero-card"
       >
         <CardHeader
@@ -34,9 +28,7 @@ export default class Hero extends Component {
           subtitle="Subtitle"
           avatar="images/ok-128.jpg"
         />
-        <CardActions>
           <FlatButton label="Click to expand" />
-        </CardActions>
       </Card>
     );
   }
