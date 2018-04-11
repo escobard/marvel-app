@@ -6,6 +6,7 @@ import styles from "./styles.scss"
 export default class HeroDetail extends Component{
 
 	render(){
+		console.log('HERO', this.props.hero)
 		return(
 				<div className="hero-list">
 					<p>test</p>
@@ -15,9 +16,9 @@ export default class HeroDetail extends Component{
 }
 
 HeroDetail.defaultProps = {
-  hero: []
+  hero: {}
 };
 
 HeroDetail.propTypes = {
-  hero: PropTypes.array
+  hero: PropTypes.object
 };
