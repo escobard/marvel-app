@@ -6,6 +6,7 @@ import {
 } from "material-ui/Card";
 import FlatButton from "material-ui/FlatButton";
 import Toggle from "material-ui/Toggle";
+import { Link } from "react-router-dom"
 
 export default class Hero extends Component {
   constructor(props) {
@@ -28,7 +29,9 @@ export default class Hero extends Component {
           subtitle="Subtitle"
           avatar="images/ok-128.jpg"
         />
-          <FlatButton label="Click to expand" />
+          <Link to={`/hero/${name}`} className="link">
+            <FlatButton label="Click to expand" />
+          </Link>
       </Card>
     );
   }

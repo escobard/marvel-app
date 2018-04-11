@@ -2,9 +2,12 @@
 
 This application is built around the following criteria:
 	- Build a cool front end application using the marvel API.
-	- Utilize the following technologies & practices:
+	- Using the following technologies & practices:
 		+ react
 		+ react-redux
+		+ webpack
+		+ axios
+		+ redux-thunk
 		+ data rendering from the marvel API endpoint
 		+ responsive and progressive web practices
 		+ component testing with jest / enzyme

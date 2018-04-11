@@ -11,6 +11,7 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 
 import Home from "./containers/home";
+import Hero from "./containers/hero";
 
 class App extends Component {
 
@@ -26,6 +27,7 @@ class App extends Component {
         <Header />
         <main className="container">
           <Route exact path="/" component={Home} />
+          <Route exact path="/hero/:hero" component={Hero} />
         </main>
         <Footer />
       </div>
@@ -34,4 +36,4 @@ class App extends Component {
 
 }
 
-export default connect(null, {fetchComics})(App);
+export default withRouter(connect(null, {fetchComics})(App));
