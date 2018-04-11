@@ -1,1 +1,10 @@
 @import "../../styles/variables";
+
+.hero-list {
+	.hero {
+		margin-bottom: $space-xlrg;
+		.hero-card {
+			min-height: 150px;
+		}
+	}
+}

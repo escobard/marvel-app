@@ -1,0 +1,81 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero snapshot +++ render the Hero component 1`] = `
+<Card
+  expandable={false}
+  expanded={false}
+  initiallyExpanded={false}
+  onExpandChange={[Function]}
+>
+  <CardHeader
+    actAsExpander={true}
+    avatar="images/ok-128.jpg"
+    showExpandableButton={true}
+    subtitle="Subtitle"
+  />
+  <CardText>
+    <Toggle
+      defaultToggled={false}
+      disabled={false}
+      label="This toggle controls the expanded state of the component."
+      labelPosition="right"
+      onToggle={[Function]}
+      toggled={false}
+    />
+  </CardText>
+  <CardMedia
+    expandable={true}
+    overlay={
+      <CardTitle
+        subtitle="Overlay subtitle"
+        title="Overlay title"
+      />
+    }
+  >
+    <img
+      alt=""
+      src="images/nature-600-337.jpg"
+    />
+  </CardMedia>
+  <CardTitle
+    expandable={true}
+    subtitle="Card subtitle"
+    title="Hero Description"
+  />
+  <CardText
+    expandable={true}
+  >
+    No description available :(
+  </CardText>
+  <CardActions>
+    <FlatButton
+      disabled={false}
+      fullWidth={false}
+      label="Expand"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onClick={[Function]}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      primary={false}
+      secondary={false}
+    />
+    <FlatButton
+      disabled={false}
+      fullWidth={false}
+      label="Reduce"
+      labelPosition="after"
+      labelStyle={Object {}}
+      onClick={[Function]}
+      onKeyboardFocus={[Function]}
+      onMouseEnter={[Function]}
+      onMouseLeave={[Function]}
+      onTouchStart={[Function]}
+      primary={false}
+      secondary={false}
+    />
+  </CardActions>
+</Card>
+`;

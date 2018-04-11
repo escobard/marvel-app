@@ -11,7 +11,7 @@ export default class HeroList extends Component{
 		return heroes.map(( hero, index ) =>{
 			let {name} = hero;
 			return(
-				<div key={index}>
+				<div key={index} className="hero col-md-4">
 					<Hero hero={hero}/>
 				</div>
 				)

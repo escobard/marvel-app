@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import HeroList from '../../src/components/HeroList';
+import HeroList from '../../../src/components/HeroList';
 import toJson from 'enzyme-to-json';
 import configureStore from 'redux-mock-store'
 
