@@ -1,10 +1,37 @@
 @import "../../styles/variables";
 
 .hero-list {
+	margin: $space-xlrg 0;
 	.hero {
 		margin-bottom: $space-xlrg;
 		.hero-card {
-			min-height: 150px;
+			min-height: 210px;
+		}
+	}
+}
+@media screen and (max-width: $break-medium) {
+	.hero {
+		.header {
+			div {
+				width: 100% !important;
+				float: left;
+				padding-right: 0 !important;
+				text-align: center;
+			}
+			img {
+				display: block !important;
+				float: none;
+				margin: auto !important;
+			}
+		}
+		.description {
+			text-align: center;
+		}
+		.link {
+			float: none;
+			margin: auto;
+			display: block;
+			width: fit-content;
 		}
 	}
 }
