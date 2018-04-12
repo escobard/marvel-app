@@ -11,12 +11,15 @@ export default class Hero extends Component {
       .hero.name
       ? this.props.hero
       : { thumbnail: {} };
+
+    let img = `${path}/portrait_medium.${extension}`
+
     return (
       <Card className="hero-card">
         <CardHeader
           className="header"
           title={name}
-          avatar="images/ok-128.jpg"
+          avatar={img}
         />
         <CardText className="description">
           {description

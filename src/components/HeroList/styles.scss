@@ -5,33 +5,57 @@
 	.hero {
 		margin-bottom: $space-xlrg;
 		.hero-card {
-			min-height: 210px;
+			min-height: 189px;
+			.header{
+				img{
+					width: 60px !important;
+					height: 60px !important;
+				}
+				span{
+					font-size: $font-size-small !important;
+				}
+			}
 		}
 	}
 }
+
+@media screen and (max-width: $break-normal) {
+	.hero-list {
+		.hero {
+			.hero-card {
+				min-height: 210px;
+			}
+		}
+	}
+}
+
 @media screen and (max-width: $break-medium) {
-	.hero {
-		.header {
-			div {
-				width: 100% !important;
-				float: left;
-				padding-right: 0 !important;
-				text-align: center;
+	.hero-list {
+		.hero {
+			.hero-card {
+				.header {
+					div {
+						width: 100% !important;
+						float: left;
+						padding-right: 0 !important;
+						text-align: center;
+					}
+					img {
+						display: block !important;
+						float: none;
+						margin: auto !important;
+					}
+				}
+				.description {
+					text-align: center;
+				}
+				.link {
+					float: none;
+					margin: auto;
+					display: block;
+					width: fit-content;
+				}
 			}
-			img {
-				display: block !important;
-				float: none;
-				margin: auto !important;
-			}
-		}
-		.description {
-			text-align: center;
-		}
-		.link {
-			float: none;
-			margin: auto;
-			display: block;
-			width: fit-content;
 		}
 	}
 }
