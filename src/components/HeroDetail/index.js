@@ -38,7 +38,7 @@ export default class HeroDetail extends Component {
 							alt={`${name}'s image`}
 						/>
 					</CardMedia>
-					<h1>{name}</h1>
+					<h2>{name}</h2>
 					<CardText>
 						{description ? description : "No description available"}
 					</CardText>

@@ -7,7 +7,6 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <h2>Search for the name of your favorite infinity war hero!</h2>
         <HeroList heroes={ this.props.marvel }/>
       </div>
     );

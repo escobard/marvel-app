@@ -8,6 +8,27 @@ import styles from "./styles.scss";
 import Hero from "./Hero";
 
 export default class HeroList extends Component {
+	constructor(props) {
+		super(props);
+		this.state = { input: '', results: []};
+	}
+
+	handleInput = (event) =>{
+		this.setState({
+      input: event.target.value
+    });
+    this.filterHeroes(this.state.input, this.props.heroes)
+    console.log(this.state.input)
+	}
+
+	filterHeroes = (input, heroes) =>{
+		let results = heroes.filter(hero => hero.name.toLowerCase().indexOf(input)>-1)
+		console.log('results', results)
+		this.setState({
+			results
+		})
+	}
+
 	renderHeroes = heroes => {
 		return heroes.map((hero, index) => {
 			let { name } = hero;
@@ -21,16 +42,19 @@ export default class HeroList extends Component {
 
 	render() {
 		let { heroes } = this.props;
-		console.log("heroes", this.props.heroes);
+		let { results } = this.state
 		return (
 			<div className="hero-list">
-				<div >
-					<TextField className="search"
+				<div>
+					<TextField
+						className="search"
 						hintText="Any name will do..."
-						floatingLabelText="Type in the name of a hero fighting in the infinity war!"
+						floatingLabelText="Search for the name of your favorite infinity war hero!"
+						value={this.state.input}
+						onChange={this.handleInput}
 					/>
 				</div>
-				{heroes.length > 1 ? this.renderHeroes(heroes) : <p>Loading...</p>}
+				{results.length > 1 ? this.renderHeroes(results) : null}
 			</div>
 		);
 	}
