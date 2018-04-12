@@ -5,21 +5,21 @@ import FlatButton from "material-ui/FlatButton";
 import Toggle from "material-ui/Toggle";
 import { Link } from "react-router-dom";
 
+import { img } from "../../utils"
+
 export default class Hero extends Component {
   render() {
     let { name, description, urls, thumbnail: { path, extension } } = this.props
       .hero.name
       ? this.props.hero
       : { thumbnail: {} };
-
-    let img = `${path}/portrait_medium.${extension}`
-
+      
     return (
       <Card className="hero-card">
         <CardHeader
           className="header"
           title={name}
-          avatar={img}
+          avatar={img(path, "portrait_medium", extension)}
         />
         <CardText className="description">
           {description

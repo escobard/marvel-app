@@ -1,0 +1,31 @@
+@import "../../styles/variables";
+
+.hero-detail {
+	h1 {
+		text-align: center;
+		padding: $space-xlrg;
+	}
+	.stats {
+		width: 96.4%;
+		display: inline-block;
+		border-top: solid 1px #003c8f;
+		margin: 1.8%;
+		padding: $space-xlrg 0;
+		border-bottom: solid 1px #003c8f;
+		.stat {
+			text-align: center;
+		}
+	}
+	.bottom {
+		display: inline-block;
+		width: 100%;
+		padding-bottom: $space-xlrg;
+		.breadcrumbs {
+			float: left;
+		}
+		.quick-links{
+			padding: 0 !important;
+			float: right;
+		}
+	}
+}
