@@ -65,34 +65,6 @@ exports[`Header snapshot +++ render the Header component 1`] = `
         home
       </MenuItem>
     </Link>
-    <Link
-      className="links"
-      key="1"
-      replace={false}
-      to="/about"
-    >
-      <MenuItem
-        anchorOrigin={
-          Object {
-            "horizontal": "right",
-            "vertical": "top",
-          }
-        }
-        checked={false}
-        desktop={false}
-        disabled={false}
-        focusState="none"
-        insetChildren={false}
-        targetOrigin={
-          Object {
-            "horizontal": "left",
-            "vertical": "top",
-          }
-        }
-      >
-        about
-      </MenuItem>
-    </Link>
   </Drawer>
 </nav>
 `;

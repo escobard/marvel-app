@@ -18,12 +18,10 @@ export default class HeroList extends Component {
       input: event.target.value
     });
     this.filterHeroes(this.state.input, this.props.heroes)
-    console.log(this.state.input)
 	}
 
 	filterHeroes = (input, heroes) =>{
 		let results = heroes.filter(hero => hero.name.toLowerCase().indexOf(input)>-1)
-		console.log('results', results)
 		this.setState({
 			results
 		})
@@ -42,7 +40,10 @@ export default class HeroList extends Component {
 
 	render() {
 		let { heroes } = this.props;
-		let { results } = this.state
+		let { results } = this.state;
+		const underlineStyle = {
+    borderColor: "#003c8f",
+  }
 		return (
 			<div className="hero-list">
 				<div>
@@ -52,6 +53,8 @@ export default class HeroList extends Component {
 						floatingLabelText="Search for the name of your favorite infinity war hero!"
 						value={this.state.input}
 						onChange={this.handleInput}
+						underlineFocusStyle={underlineStyle}
+						floatingLabelFocusStyle={underlineStyle}
 					/>
 				</div>
 				{results.length > 1 ? this.renderHeroes(results) : null}

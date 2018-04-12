@@ -1,27 +1,33 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Hero snapshot +++ render the Hero component 1`] = `
-<Card
-  className="hero-card"
-  expandable={false}
-  expanded={null}
-  initiallyExpanded={false}
->
-  <CardHeader
-    avatar="images/ok-128.jpg"
-    subtitle="Subtitle"
-  />
-  <Link
-    className="link"
-    params={
-      Object {
-        "hero": Object {},
-      }
+<Link
+  className="link"
+  params={
+    Object {
+      "hero": Object {},
     }
-    replace={false}
-    to="/hero/undefined"
+  }
+  replace={false}
+  to="/hero/undefined"
+>
+  <Card
+    className="hero-card"
+    expandable={false}
+    expanded={null}
+    initiallyExpanded={false}
   >
+    <CardHeader
+      avatar="undefined/portrait_medium.undefined"
+      className="header"
+    />
+    <CardText
+      className="description"
+    >
+      No description available
+    </CardText>
     <FlatButton
+      className="expand"
       disabled={false}
       fullWidth={false}
       label="Click to expand"
@@ -34,6 +40,6 @@ exports[`Hero snapshot +++ render the Hero component 1`] = `
       primary={false}
       secondary={false}
     />
-  </Link>
-</Card>
+  </Card>
+</Link>
 `;
