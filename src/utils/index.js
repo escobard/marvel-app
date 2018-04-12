@@ -1,0 +1,1 @@
+export const img = (path, size, extension) => `${path}/${size}.${extension}`

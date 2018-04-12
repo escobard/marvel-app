@@ -11,7 +11,7 @@ export default class HeroList extends Component{
 		return heroes.map(( hero, index ) =>{
 			let {name} = hero;
 			return(
-				<article key={index} className="hero col-md-4">
+				<article key={index} className="hero col-md-4 col-sm-12">
 					<Hero hero={hero}/>
 				</article>
 				)
@@ -23,7 +23,6 @@ export default class HeroList extends Component{
 		console.log('heroes', this.props.heroes)
 		return(
 				<div className="hero-list">
-					<p>Hero list</p>
 					{
 						heroes.length > 1 
 						?	this.renderHeroes(heroes) 

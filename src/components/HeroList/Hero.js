@@ -1,35 +1,37 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
-import {
-  Card,
-  CardHeader,
-} from "material-ui/Card";
+import { Card, CardHeader, CardText } from "material-ui/Card";
 import FlatButton from "material-ui/FlatButton";
 import Toggle from "material-ui/Toggle";
+import { Link } from "react-router-dom";
+
+import { img } from "../../utils"
 
 export default class Hero extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      expanded: false
-    };
-  }
-
   render() {
-    let { name, description, urls, thumbnail: { path, extension } } = this.props.hero.name
+    let { name, description, urls, thumbnail: { path, extension } } = this.props
+      .hero.name
       ? this.props.hero
       : { thumbnail: {} };
+
     return (
-      <Card
-        className="hero-card"
-      >
+      <Link to={`/hero/${name}`} className="link" params={this.props}>
+      <Card className="hero-card">
         <CardHeader
+          className="header"
           title={name}
-          subtitle="Subtitle"
-          avatar="images/ok-128.jpg"
+          avatar={img(path, "portrait_medium", extension)}
         />
-          <FlatButton label="Click to expand" />
+        <CardText className="description">
+          {description
+            ? description.substring(0, 40) + "..."
+            : "No description available"}
+        </CardText>
+        
+          <FlatButton className="expand" label="Click to expand"/>
+        
       </Card>
+      </Link>
     );
   }
 }

@@ -1,14 +1,29 @@
-# marvel-app
+# marvel-app - challenge app
 
-This application's criteria is to show off my front end expertise with a react front end application with the create-react-app boilerplate, which connects utilizes the Marvel API data.
+This application is built around the following criteria:
+	- Build a cool front end application using the marvel API.
+	- Using the following technologies & practices:
+		+ react
+		+ react-redux
+		+ webpack
+		+ axios
+		+ redux-thunk
+		+ data rendering from the marvel API endpoint
+		+ responsive and progressive web practices
+		+ component testing with jest / enzyme
+	- Build in ~6 hours.
 
 ## Installation
 
 ```
-$ npm install
+$ npm install (or yarn install)
 ```
 
 ## Usage
+
+```
+$ npm start (or yarn start)
+```
 
 Usage instructions to be expanded in the future:
 

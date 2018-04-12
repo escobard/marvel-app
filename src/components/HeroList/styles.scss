@@ -1,10 +1,47 @@
 @import "../../styles/variables";
 
 .hero-list {
+	margin: $space-xlrg 0;
 	.hero {
 		margin-bottom: $space-xlrg;
 		.hero-card {
-			min-height: 150px;
+			min-height: 189px;
+			.header {
+				img {
+					width: 60px !important;
+					height: 60px !important;
+					display: block !important;
+					float: none;
+					margin: auto !important;
+				}
+				div {
+					width: 100% !important;
+					float: left;
+					padding-right: 0 !important;
+					text-align: center;
+				}
+				span {
+					font-size: $font-size-small !important;
+				}
+			}
+			.description {
+				text-align: center;
+			}
+			button {
+				display: block !important;
+				float: none;
+				margin: auto !important;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: $break-normal) {
+	.hero-list {
+		.hero {
+			.hero-card {
+				min-height: 215px;
+			}
 		}
 	}
 }

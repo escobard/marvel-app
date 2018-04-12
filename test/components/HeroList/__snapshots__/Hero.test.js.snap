@@ -4,14 +4,23 @@ exports[`Hero snapshot +++ render the Hero component 1`] = `
 <Card
   className="hero-card"
   expandable={false}
-  expanded={false}
+  expanded={null}
   initiallyExpanded={false}
 >
   <CardHeader
     avatar="images/ok-128.jpg"
     subtitle="Subtitle"
   />
-  <CardActions>
+  <Link
+    className="link"
+    params={
+      Object {
+        "hero": Object {},
+      }
+    }
+    replace={false}
+    to="/hero/undefined"
+  >
     <FlatButton
       disabled={false}
       fullWidth={false}
@@ -25,6 +34,6 @@ exports[`Hero snapshot +++ render the Hero component 1`] = `
       primary={false}
       secondary={false}
     />
-  </CardActions>
+  </Link>
 </Card>
 `;

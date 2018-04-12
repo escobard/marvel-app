@@ -1,4 +1,4 @@
-## v0.8 - extras
+## v0.9 - extras
 
 - TODO (optional):
 	+ add offline render with service worker
@@ -6,26 +6,34 @@
 	+ add about page route / container
 	+ add wiki documentation
 
-## v0.7 - cleanup
+## v0.8 - cleanup
 
 - TODO:
 	+ clean up styles globally
 	+ improve semantic structure
 
-## v0.6 - single hero
+## v0.7 - search implement
+
+- TODO:
+	+ add material-ui components for main page including:
+		* search input
+		* search button
+	+ implement search filter functionality
+
+## v0.6 - semantics and styles
+
+- TODO:
+	+ clean up styling for:
+		- HeroList
+		- HeroDetail
+	+ consider responsive implementations
+
+## v0.5 - single hero
 
 - TODO:
 	+ set up container for single hero
 	+ set up routing for single hero
 	+ style single hero component
-
-## v0.5 - semantics and styles
-
-- TODO:
-	+ add base structure styles
-	+ add material-ui components for main page including:
-		* search input
-		* search button
 
 ## v0.4 - data rendering
 
