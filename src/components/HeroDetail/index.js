@@ -86,8 +86,6 @@ export default class HeroDetail extends Component {
 	};
 
 	render() {
-		console.log("HERO", this.props.hero);
-
 		return (
 			<article className="hero-detail">
 				{this.props.hero ? this.renderHero(this.props.hero) : null}

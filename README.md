@@ -1,17 +1,18 @@
 # marvel-app - challenge app
 
 This application is built around the following criteria:
-	- Build a cool front end application using the marvel API.
-	- Using the following technologies & practices:
-		+ react
-		+ react-redux
-		+ webpack
-		+ axios
-		+ redux-thunk
-		+ data rendering from the marvel API endpoint
-		+ responsive and progressive web practices
-		+ component testing with jest / enzyme
-	- Build in ~6 hours.
+
+- Build a cool front end application using the marvel API.
+- Using the following technologies & practices:
+	+ react
+	+ react-redux
+	+ webpack
+	+ axios
+	+ redux-thunk
+	+ data rendering from the marvel API endpoint
+	+ responsive and progressive web practices
+	+ component testing with jest / enzyme
+- Build in ~6 hours.
 
 ## Installation
 
