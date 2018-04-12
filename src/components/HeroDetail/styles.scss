@@ -23,9 +23,41 @@
 		.breadcrumbs {
 			float: left;
 		}
-		.quick-links{
+		.quick-links {
 			padding: 0 !important;
 			float: right;
+		}
+	}
+}
+
+@media screen and (max-width: $break-medium) {
+	.hero-detail {
+		h1{
+			padding: $space-med;
+		}
+		.stats {
+			.stat {
+				border-bottom: solid 1px #003c8f;
+				margin-bottom: $space-lrg;
+				padding-bottom: $space-lrg;
+				&:nth-child(4){
+					border-bottom: 0;
+					margin-bottom: 0;
+					padding-bottom: 0;
+				}
+			}
+		}
+		.bottom {
+			padding-bottom: $space-med;
+			.breadcrumbs {
+				float: none;
+				margin: auto;
+				width: fit-content;
+			}
+			.quick-links {
+				padding: 0 !important;
+				float: right;
+			}
 		}
 	}
 }
