@@ -65,6 +65,7 @@ export default class HeroDetail extends Component {
 							<Link to="/" className="link">
 								<FlatButton label="Home" />
 							</Link>
+							<span> / </span>
 							<Link to={`/hero/${name}`} className="link">
 								<FlatButton label={name} />
 							</Link>

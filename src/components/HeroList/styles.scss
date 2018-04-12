@@ -6,14 +6,31 @@
 		margin-bottom: $space-xlrg;
 		.hero-card {
 			min-height: 189px;
-			.header{
-				img{
+			.header {
+				img {
 					width: 60px !important;
 					height: 60px !important;
+					display: block !important;
+					float: none;
+					margin: auto !important;
 				}
-				span{
+				div {
+					width: 100% !important;
+					float: left;
+					padding-right: 0 !important;
+					text-align: center;
+				}
+				span {
 					font-size: $font-size-small !important;
 				}
+			}
+			.description {
+				text-align: center;
+			}
+			button {
+				display: block !important;
+				float: none;
+				margin: auto !important;
 			}
 		}
 	}
@@ -23,38 +40,7 @@
 	.hero-list {
 		.hero {
 			.hero-card {
-				min-height: 210px;
-			}
-		}
-	}
-}
-
-@media screen and (max-width: $break-medium) {
-	.hero-list {
-		.hero {
-			.hero-card {
-				.header {
-					div {
-						width: 100% !important;
-						float: left;
-						padding-right: 0 !important;
-						text-align: center;
-					}
-					img {
-						display: block !important;
-						float: none;
-						margin: auto !important;
-					}
-				}
-				.description {
-					text-align: center;
-				}
-				.link {
-					float: none;
-					margin: auto;
-					display: block;
-					width: fit-content;
-				}
+				min-height: 215px;
 			}
 		}
 	}

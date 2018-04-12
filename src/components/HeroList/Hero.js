@@ -13,8 +13,9 @@ export default class Hero extends Component {
       .hero.name
       ? this.props.hero
       : { thumbnail: {} };
-      
+
     return (
+      <Link to={`/hero/${name}`} className="link" params={this.props}>
       <Card className="hero-card">
         <CardHeader
           className="header"
@@ -26,10 +27,11 @@ export default class Hero extends Component {
             ? description.substring(0, 40) + "..."
             : "No description available"}
         </CardText>
-        <Link to={`/hero/${name}`} className="link" params={this.props}>
-          <FlatButton label="Click to expand"/>
-        </Link>
+        
+          <FlatButton className="expand" label="Click to expand"/>
+        
       </Card>
+      </Link>
     );
   }
 }
