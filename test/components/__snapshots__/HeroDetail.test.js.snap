@@ -1,11 +1,3 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`HeroDetail snapshot +++ render the HeroDetail component 1`] = `
-<div
-  className="hero-list"
->
-  <p>
-    test
-  </p>
-</div>
-`;
+exports[`HeroDetail snapshot +++ render the HeroDetail component 1`] = `undefined`;

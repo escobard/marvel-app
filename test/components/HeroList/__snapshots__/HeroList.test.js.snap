@@ -4,11 +4,31 @@ exports[`HeroList snapshot +++ render the HeroList component 1`] = `
 <div
   className="hero-list"
 >
-  <p>
-    Hero list
-  </p>
-  <p>
-    Loading...
-  </p>
+  <div>
+    <TextField
+      className="search"
+      disabled={false}
+      floatingLabelFixed={false}
+      floatingLabelFocusStyle={
+        Object {
+          "borderColor": "#003c8f",
+        }
+      }
+      floatingLabelText="Search for the name of your favorite infinity war hero!"
+      fullWidth={false}
+      hintText="Any name will do..."
+      multiLine={false}
+      onChange={[Function]}
+      rows={1}
+      type="text"
+      underlineFocusStyle={
+        Object {
+          "borderColor": "#003c8f",
+        }
+      }
+      underlineShow={true}
+      value=""
+    />
+  </div>
 </div>
 `;

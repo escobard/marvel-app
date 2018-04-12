@@ -2,6 +2,11 @@
 
 .hero-list {
 	margin: $space-xlrg 0;
+	.search{
+		display: inline-block !important;
+		width: 100% !important;
+		margin-bottom: $space-xlrg;
+	}
 	.hero {
 		margin-bottom: $space-xlrg;
 		.hero-card {

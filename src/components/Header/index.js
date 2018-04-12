@@ -13,7 +13,7 @@ class Header extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			navItems: ["home", "about"]
+			navItems: ["home"]
 		};
 	}
 

@@ -7,8 +7,6 @@ class Hero extends Component {
   render() {
     let { marvel } = this.props.marvel ? this.props : { loading: true };
 
-    console.log("HERO NAME", this.props.match.params.hero);
-
     // should refactor into helper component
     let hero = false,
       findHero = marvel.map((fhero, index) => {
@@ -16,7 +14,6 @@ class Hero extends Component {
           return null;
         }
         if (fhero.name === this.props.match.params.hero) {
-          console.log("MATCH", fhero);
           hero = fhero;
           return hero;
         }

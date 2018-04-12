@@ -1,7 +1,7 @@
 @import "../../styles/variables";
 
 .hero-detail {
-	h1 {
+	h2 {
 		text-align: center;
 		padding: $space-xlrg;
 	}
@@ -32,7 +32,7 @@
 
 @media screen and (max-width: $break-medium) {
 	.hero-detail {
-		h1{
+		h2{
 			padding: $space-med;
 		}
 		.stats {
