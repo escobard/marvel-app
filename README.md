@@ -12,7 +12,7 @@ This application is built around the following criteria:
 	+ data rendering from the marvel API endpoint
 	+ responsive and progressive web practices
 	+ component testing with jest / enzyme
-- Build in ~6 hours.
+- Build in ~4 hours.
 
 ## Installation
 
